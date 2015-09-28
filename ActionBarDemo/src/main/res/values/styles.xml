@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- 自定义theme-->
+    <style name="MyCustomActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- 设置ActionBar的overlay mode-->
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+
+        <!-- 设置ActionBar的样式-->
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBarStyle</item>
+    </style>
+
+    <!-- ActionBar样式-->
+    <style name="MyActionBarStyle"
+        parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <!-- 设置ActionBar的背景颜色-->
+        <item name="android:background">@color/my_actionbar_bg</item>
+        <!-- Support library compatibility -->
+        <item name="background">@color/my_actionbar_bg</item>
+
+        <!-- 设置ActionBar的title text的样式-->
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        <!-- Support library compatibility -->
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+    </style>
+
+    <!-- ActionBar title text样式-->
+    <style name="MyActionBarTitleText"
+        parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/holo_green_light</item>
+        <!-- The textColor property is backward compatible with the Support Library -->
+    </style>
+
+</resources>
